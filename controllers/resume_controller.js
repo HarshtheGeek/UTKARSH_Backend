@@ -1,5 +1,8 @@
 // Analyzing occupation function
-exports.getOccupation = async (req, res) => {
+//Created a function which will detect the occupation of the user and will generate me 5-7 questions in json format
+import occupationAnalyzer from "../services/resume_service.js";
+
+export const getOccupationController = async (req, res) => {
   try {
     const { occupationString } = req.body;
 
