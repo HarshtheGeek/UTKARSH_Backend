@@ -5,7 +5,7 @@ const apikey = process.env.API_KEY
 async function occupationAnalyzer(occupationString) {
   try {
     const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apikey}`,
       {
         contents: [
           {
@@ -32,6 +32,7 @@ RULES:
 * Easy for skilled worker, hard for beginner
 * Max 15–18 words per question
 * Answerable in 1–2 spoken sentences
+* Strictly in JSON format
 
 COVER:
 

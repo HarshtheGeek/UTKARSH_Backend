@@ -1,5 +1,5 @@
 import express from "express";
-import { getOccupationController } from "../controllers/FeynmanController.js";
+import { getOccupationController } from "../controllers/resume_controller.js";
 
 const router = express.Router();
 
